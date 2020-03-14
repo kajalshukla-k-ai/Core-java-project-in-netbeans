@@ -9,6 +9,7 @@ package fee.report;
  *
  * @author d
  */
+import java.sql.*;
 public class EditStudent extends javax.swing.JFrame {
 
     /**
@@ -28,7 +29,7 @@ public class EditStudent extends javax.swing.JFrame {
     private void initComponents() {
 
         rollno = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        id = new javax.swing.JTextField();
         fetch = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JSeparator();
         name = new javax.swing.JLabel();
@@ -124,7 +125,7 @@ public class EditStudent extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(rollno, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(id, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
                 .addComponent(fetch, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(53, Short.MAX_VALUE))
@@ -170,7 +171,7 @@ public class EditStudent extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(rollno)
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(id, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(fetch))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -236,7 +237,9 @@ public class EditStudent extends javax.swing.JFrame {
     }//GEN-LAST:event_course1ActionPerformed
 
     private void fetchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fetchActionPerformed
-        // TODO add your handling code here:
+        String roll=id.getSelectedText();
+        
+        //Student.query("select from student where id=?" );
     }//GEN-LAST:event_fetchActionPerformed
 
     private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
@@ -298,9 +301,9 @@ accountant.setVisible(true);
     private javax.swing.JLabel fee;
     private javax.swing.JTextField fee1;
     private javax.swing.JButton fetch;
+    private javax.swing.JTextField id;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel name;
     private javax.swing.JTextField name1;
     private javax.swing.JLabel paid;

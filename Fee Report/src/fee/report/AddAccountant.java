@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package fee.report;
-
+import java.sql.*;
 /**
  *
  * @author d

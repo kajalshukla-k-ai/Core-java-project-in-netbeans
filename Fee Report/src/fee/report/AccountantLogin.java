@@ -9,6 +9,7 @@ package fee.report;
  *
  * @author d
  */
+import java.sql.*;
 public class AccountantLogin extends javax.swing.JFrame {
 
     /**
@@ -108,6 +109,9 @@ public class AccountantLogin extends javax.swing.JFrame {
     private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
 AccountantSection accountantSection = new AccountantSection();
 accountantSection.setVisible(true);
+String name = name1.getName();
+String pass = pass1.getText().toString();
+ AccountLogin.qString(name, pass);
     }//GEN-LAST:event_loginActionPerformed
 
     private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed

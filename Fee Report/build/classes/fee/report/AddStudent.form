@@ -23,11 +23,6 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
-              <Component id="AddStudent" min="-2" pref="84" max="-2" attributes="0"/>
-              <EmptySpace max="32767" attributes="0"/>
-          </Group>
           <Group type="102" alignment="0" attributes="0">
               <Group type="103" groupAlignment="1" attributes="0">
                   <Group type="102" attributes="0">
@@ -42,6 +37,19 @@
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Component id="contact1" max="32767" attributes="0"/>
                           </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="country" pref="80" max="32767" attributes="0"/>
+                                  <Component id="state" max="32767" attributes="0"/>
+                                  <Component id="city" max="32767" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="city1" alignment="1" min="-2" pref="236" max="-2" attributes="0"/>
+                                  <Component id="state1" pref="270" max="32767" attributes="0"/>
+                                  <Component id="country1" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                   <Component id="address" pref="54" max="32767" attributes="0"/>
@@ -51,46 +59,47 @@
                                   <Component id="fee" alignment="0" max="32767" attributes="0"/>
                                   <Component id="jLabel6" alignment="0" max="32767" attributes="0"/>
                                   <Component id="due" alignment="0" max="32767" attributes="0"/>
+                                  <Component id="id" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
-                                      <Component id="name1" alignment="0" pref="208" max="32767" attributes="0"/>
-                                      <Component id="email1" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="course1" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="fee1" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="due1" max="32767" attributes="0"/>
-                                      <Component id="paid1" alignment="0" max="32767" attributes="0"/>
-                                  </Group>
                                   <Component id="jScrollPane1" alignment="1" min="-2" pref="228" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="country" max="32767" attributes="0"/>
-                                  <Component id="state" max="32767" attributes="0"/>
-                                  <Component id="city" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="city1" alignment="1" min="-2" pref="236" max="-2" attributes="0"/>
-                                  <Component id="state1" max="32767" attributes="0"/>
-                                  <Component id="country1" max="32767" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                          <Component id="id1" max="32767" attributes="0"/>
+                                          <Component id="name1" alignment="0" pref="208" max="32767" attributes="0"/>
+                                          <Component id="email1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="course1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="fee1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="due1" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="paid1" alignment="0" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace min="-2" pref="88" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
                       </Group>
                       <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="0" pref="100" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="32" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
+              <Component id="AddStudent" min="-2" pref="84" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
               <Component id="AddStudent" min="-2" pref="24" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="id" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="id1" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="name" min="-2" pref="25" max="-2" attributes="0"/>
@@ -148,7 +157,7 @@
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="back" pref="55" max="32767" attributes="0"/>
+                  <Component id="back" pref="44" max="32767" attributes="0"/>
                   <Component id="addstudent1" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
@@ -236,6 +245,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Add Student"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addstudent1ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="back">
       <Properties>
@@ -273,6 +285,13 @@
     <Component class="javax.swing.JTextField" name="country1">
     </Component>
     <Component class="javax.swing.JTextField" name="contact1">
+    </Component>
+    <Component class="javax.swing.JLabel" name="id">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="ID :"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="id1">
     </Component>
   </SubComponents>
 </Form>
